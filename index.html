@@ -15,10 +15,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            overflow: auto;
             background-image: url('https://toolremake.com/wp-content/uploads/2019/10/IMG_4822-e1572157048543.jpg');
             background-size: cover;
             background-position: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: -1;
         }
         .container {
             background-color: #fff;
@@ -28,11 +38,9 @@
             width: 90%;
             padding: 20px;
             box-sizing: border-box;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background-image: url('https://sakusakuec.com/img/page_block/pixta_57759169_M.jpg');
-            background-size: cover;
-            background-position: bottom;
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
         }
         h1 {
             color: #333;
@@ -72,6 +80,7 @@
     </style>
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="container">
         <h1>旋盤フライス盤講習</h1>
         <p><span class="section-title">講習日程</span><br>2024年9月4日（水）～2024年9月6日（金）</p>
