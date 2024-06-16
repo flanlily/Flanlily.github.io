@@ -31,7 +31,94 @@
             z-index: -1;
         }
         .container {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            width: 90%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        .section-title {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            font-size: 1.2em;
+        }
+        .contact {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 2px solid #ddd;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>旋盤フライス盤講習</h1>
+        <p><span class="section-title">講習日程</span><br>2024年9月4日（水）～2024年9月6日（金）</p>
+        <p><span class="section-title">時間</span><br>9:00～17:00</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋盤フライス盤講習</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+        body {
+            font-family: 'Noto Serif JP', serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: auto;
+            background-image: url('https://toolremake.com/wp-content/uploads/2019/10/IMG_4822-e1572157048543.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: -1;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             border-radius: 8px;
             max-width: 600px;
@@ -99,6 +186,7 @@
             旋盤は、主軸に取り付けた切削工具（ツール）を回転させながら、固定された材料（ワークピース）を回転させて加工します。主軸の回転により、円筒形、円錐形、球形などの形状を作ることができます。切削工具はツールホルダーに取り付けられ、適切な切削速度と送り速度で材料を削ります。</p>
             <p>・用途:<br>
             旋盤は、主に回転体の加工に使用されます。例えば、軸受けや車輪、歯車、バルブ、ピストンなどの部品がこれに該当します。外径加工や内径加工に優れており、高精度な加工が可能です。</p>
+
             <p>・利点:<br>
             高精度であるため、精密機械部品の製造に適しています。回転する材料を削るため、大きな部品や長い部品も加工しやすいです。</p>
 
@@ -111,11 +199,19 @@
             フライス盤は、平面形状や複雑な形状を持つ部品を加工するのに適しています。例えば、歯車や溝、鍵（キー）溝、歯縁などの加工がこれに該当します。精密な形状を持つ金型や工具の製作にも用いられます。</p>
             <p>・利点:<br>
             複雑な形状を高精度で加工することができ、柔軟性があります。切削工具の取り付け位置を変えることで、多様な形状を加工できます。</p>
-            <p><strong>比較と利用場面</strong><br>
-            旋盤は主に回転体の加工に適しており、円筒形の部品や軸受けなどの加工に使用されます。フライス盤は平面加工や複雑な形状の加工に特化しており、歯車や金型、工具などの加工に使用されます。</p>
-            <p>今回は旋盤, フライス盤ですが、クリエイトセンターでは"サンドブラスト", "カッティングシート", "シール", "缶バッジ", "solid works"など様々な講習をしています。これらの講習を受ければ自由に使うことができます!!(※制作物によっては物品に応じた金額の証紙が必要)是非ご利用ください!!!</p>
-            
+
+            <p><strong>比較と利用場面</strong></p>
+            <p>旋盤は主に回転体の加工に適しており、円筒形の部品や軸受けなどの加工に使用されます。一方、フライス盤は平面加工や複雑な形状の加工に特化しており、歯車や金型、工具などの加工に使用されます。</p>
+
+            <p>今回は旋盤, フライス盤ですが、クリエイトセンターでは"サンドブラスト", "カッティングシート", "シール", "缶バッジ", "solid works"など様々な講習をしています。これらの講習を受ければ自由に使うことができます!!(※制作物によっては物品に応じた金額の証紙が必要) 是非ご利用ください!!!</p>
+
+            <div class="contact">
             <p>連絡先</p>
             <p>大阪産業大学 東キャンパス 8号館2階8201教室 クリエイトセンター</p>
             <p>TEL: 072-875-4532 (直通)</p>
-            <p>E-mail: <a href="mailto:s-create@cnt.osaka-sandai.ac.jp">s-create@cnt.osaka-sandai.ac.jp</a></
+            <p>E-mail: <a href="mailto:s-create@cnt.osaka-sandai.ac.jp">s-create@cnt.osaka-sandai.ac.jp</a></p>
+</div>
+</div>
+</body>
+</html>
+
