@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>旋盤フライス盤講習</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+        
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Noto Serif JP', serif;
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
@@ -23,16 +25,19 @@
             width: 90%;
             padding: 20px;
             box-sizing: border-box;
+            overflow: hidden;
         }
         h1 {
             color: #333;
             text-align: center;
             margin-bottom: 20px;
+            font-size: 1.8em;
         }
         p {
             color: #666;
             line-height: 1.6;
             margin-bottom: 10px;
+            font-size: 1.1em;
         }
         .section-title {
             color: #333;
@@ -40,6 +45,8 @@
             margin-bottom: 10px;
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
+            font-weight: bold;
+            font-size: 1.2em;
         }
         .contact {
             margin-top: 20px;
@@ -49,32 +56,25 @@
         .contact p {
             margin: 5px 0;
         }
-        .history {
+        .top-bg {
             background-image: url('https://toolremake.com/wp-content/uploads/2019/10/IMG_4822-e1572157048543.jpg');
-            color: #333;
-            text-align: justify;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-top: 20px;
-            line-height: 1.6;
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+            margin: -20px -20px 20px -20px;
         }
-        .history h2 {
-            font-family: 'MS Mincho', serif;
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 10px;
-            -webkit-text-stroke-width: 1mm;
-            -webkit-text-stroke-color: white;
-        }
-        .history p {
-            font-family: 'MS Mincho', serif;
-            font-size: 16px;
+        .bottom-bg {
+            background-image: url('https://sakusakuec.com/img/page_block/pixta_57759169_M.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+            margin: 20px -20px -20px -20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="top-bg"></div>
         <h1>旋盤フライス盤講習</h1>
         <p><span class="section-title">講習日程</span><br>2024年9月4日（水）～2024年9月6日（金）</p>
         <p><span class="section-title">時間</span><br>9:00～17:00</p>
@@ -83,46 +83,42 @@
         <p><span class="section-title">注意事項</span><br>事前に安全講習の受講が必須。安全講習の開催日程についてはクリエイトセンターにてご確認ください。</p>
         <p><span class="section-title">持ち物</span><br>お昼ごはん、筆記具、汚れてもよい服、作業着（あれば）、安全靴（ない場合は運動靴）。サンダルや半ズボンなどの素足が露出するものは禁止。</p>
         <p><span class="section-title">応募方法</span><br>クリエイトセンターまでお越しいただくか、メールにてご連絡ください。</p>
+        <p><span class="section-title">旋盤（せんばん）</span><br>
+            ・歴史: <br>
+            旋盤は、古代エジプトや古代ローマ時代から存在しており、手動で操作される初期の形態がありました。その後、中世ヨーロッパで改良が加えられ、より洗練された形態となりました。<br>
+            工業革命以降、旋盤は機械化され、自動化されたものが現れました。これにより、大量生産や高精度加工が可能になりました。<br>
+            ・構造と動作: <br>
+            旋盤は、主軸に取り付けた切削工具（ツール）を回転させながら、固定された材料（ワークピース）を回転させて加工します。<br>
+            主軸の回転により、円筒形、円錐形、球形などの形状を作ることができます。<br>
+            切削工具はツールホルダーに取り付けられ、適切な切削速度と送り速度で材料を削ります。<br>
+            ・用途: <br>
+            旋盤は、主に回転体の加工に使用されます。例えば、軸受けや車輪、歯車、バルブ、ピストンなどの部品がこれに該当します。<br>
+            外径加工や内径加工に優れており、高精度な加工が可能です。<br>
+            ・利点: <br>
+            高精度であるため、精密機械部品の製造に適しています。<br>
+            回転する材料を削るため、大きな部品や長い部品も加工しやすいです。<br>
+        </p>
+        <p><span class="section-title">フライス盤（ふらいすばん）</span><br>
+            ・歴史: <br>
+            フライス盤の起源は18世紀後半に遡ります。初期のフライス盤は手動で操作されていましたが、19世紀中頃に機械化が進み、精密な加工が可能になりました。<br>
+            フライス盤は、金型加工や工具製造の分野で広く使われるようになりました。<br>
+            ・構造と動作: <br>
+            フライス盤は、固定した材料（ワークピース）に対して切削工具を動かして平面加工を行います。<br>
+            切削工具は主軸に取り付けられ、数軸の動き（X軸、Y軸、Z軸）によって材料の表面を削り取ります。<br>
+            平面、溝、突起、歯などの形状を作成することができます。<br>
+            ・用途: <br>
+            フライス盤は、平面形状や複雑な形状を持つ部品を加工するのに適しています。例えば、歯車や溝、鍵（キー）溝、歯縁などの加工がこれに該当します。<br>
+            精密な形状を持つ金型や工具の製作にも用いられます。<br>
+            ・利点: <br>
+            複雑な形状を高精度で加工することができ、柔軟性があります。<br>
+            切削工具の取り付け位置を変えることで、多様な形状を加工できます。<br>
+        </p>
+        <p><span class="section-title">比較と利用場面</span><br>
+            旋盤は主に回転体の加工に適しており、円筒形の部品や軸受けなどの加工に使用されます。<br>
+            フライス盤は平面加工や複雑な形状の加工に特化しており、歯車や金型、工具などの加工に使用されます。
+        </p>
         <div class="contact">
             <p>連絡先</p>
             <p>大阪産業大学 東キャンパス 8号館2階8201教室 クリエイトセンター</p>
             <p>TEL: 072-875-4532 (直通)</p>
-            <p>E-mail: <a href="mailto:s-create@cnt.osaka-sandai.ac.jp">s-create@cnt.osaka-sandai.ac.jp</a></p>
-        </div>
-    </div>
-    <div class="history">
-        <h2>旋盤（せんばん）</h2>
-        <p>歴史:<br>
-        旋盤は、古代エジプトや古代ローマ時代から存在しており、手動で操作される初期の形態がありました。その後、中世ヨーロッパで改良が加えられ、より洗練された形態となりました。<br>
-        工業革命以降、旋盤は機械化され、自動化されたものが現れました。これにより、大量生産や高精度加工が可能になりました。</p>
-        <p>構造と動作:<br>
-        旋盤は、主軸に取り付けた切削工具（ツール）を回転させながら、固定された材料（ワークピース）を回転させて加工します。<br>
-        主軸の回転により、円筒形、円錐形、球形などの形状を作ることができます。<br>
-        切削工具はツールホルダーに取り付けられ、適切な切削速度と送り速度で材料を削ります。</p>
-        <p>用途:<br>
-        旋盤は、主に回転体の加工に使用されます。例えば、軸受けや車輪、歯車、バルブ、ピストンなどの部品がこれに該当します。<br>
-        外径加工や内径加工に優れており、高精度な加工が可能です。</p>
-        <p>利点:<br>
-        高精度であるため、精密機械部品の製造に適しています。<br>
-        回転する材料を削るため、大きな部品や長い部品も加工しやすいです。</p>
-        <h2>フライス盤（ふらいすばん）</h2>
-        <p>歴史:<br>
-        フライス盤の起源は18世紀後半に遡ります。初期のフライス盤は手動で操作されていましたが、19世紀中頃に機械化が進み、精密な加工が可能になりました。<br>
-        フライス盤は、金型加工や工具製造の分野で広く使われるようになりました。</p>
-        <p>構造と動作:<br>
-        フライス盤は、固定した材料（ワークピース）に対して切削工具を動かして平面加工を行います。<br>
-        切削工具は主軸に取り付けられ、数軸の動き（X軸、Y軸、Z軸）によって材料の表面を削り取ります。<br>
-        平面、溝、突起、歯などの形状を作成することができます。</p>
-        <p>用途:<br>
-        フライス盤は、平面形状や複雑な形状を持つ部品を加工する
-        に適しています。例えば、歯車や溝、鍵（キー）溝、歯縁などの加工がこれに該当します。<br>
-        精密な形状を持つ金型や工具の製作にも用いられます。</p>
-        <p>利点:<br>
-        複雑な形状を高精度で加工することができ、柔軟性があります。<br>
-        切削工具の取り付け位置を変えることで、多様な形状を加工できます。</p>
-        <h2>比較と利用場面</h2>
-        <p>旋盤は主に回転体の加工に適しており、円筒形の部品や軸受けなどの加工に使用されます。<br>
-        フライス盤は平面加工や複雑な形状の加工に特化しており、歯車や金型、工具などの加工に使用されます。</p>
-    </div>
-</body>
-</html>
+            <p>E-mail: <a href="mailto:s-create@cnt.osaka-sandai.ac.jp">s-create
