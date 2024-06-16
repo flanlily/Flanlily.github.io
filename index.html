@@ -15,60 +15,59 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             border-radius: 8px;
-            max-width: 600px;
+            max-width: 100%;
             width: 90%;
-            padding: 20px;
+            padding: 15px;
             box-sizing: border-box;
             overflow: hidden;
         }
         h1 {
             color: #333;
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-size: 1.4em;
         }
         p {
             color: #666;
             line-height: 1.6;
             margin-bottom: 10px;
-            font-size: 1.1em;
+            font-size: 0.9em;
         }
         .section-title {
             color: #333;
-            margin-top: 20px;
+            margin-top: 15px;
             margin-bottom: 10px;
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .contact {
-            margin-top: 20px;
+            margin-top: 15px;
             padding-top: 10px;
             border-top: 2px solid #ddd;
         }
         .contact p {
             margin: 5px 0;
         }
-        .top-bg {
-            background-image: url('https://toolremake.com/wp-content/uploads/2019/10/IMG_4822-e1572157048543.jpg');
+        .top-bg, .bottom-bg {
             background-size: cover;
             background-position: center;
-            height: 150px;
-            margin: -20px -20px 20px -20px;
+            height: 120px;
+            margin: -15px -15px 15px -15px;
+        }
+        .top-bg {
+            background-image: url('https://toolremake.com/wp-content/uploads/2019/10/IMG_4822-e1572157048543.jpg');
         }
         .bottom-bg {
             background-image: url('https://sakusakuec.com/img/page_block/pixta_57759169_M.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 150px;
-            margin: 20px -20px -20px -20px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -121,4 +120,9 @@
             <p>連絡先</p>
             <p>大阪産業大学 東キャンパス 8号館2階8201教室 クリエイトセンター</p>
             <p>TEL: 072-875-4532 (直通)</p>
-            <p>E-mail: <a href="mailto:s-create@cnt.osaka-sandai.ac.jp">s-create
+            <p>E-mail: <a href="mailto:s-create@cnt.osaka-sandai.ac.jp">s-create@cnt.osaka-sandai.ac.jp</a></p>
+        </div>
+        <div class="bottom-bg"></div>
+    </div>
+</body>
+</html>
